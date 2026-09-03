@@ -1,0 +1,322 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260903193746
+Nombre de usuario: LX15PRO\Evaristo
+Usuario RunAs: LX15PRO\Evaristo
+Nombre de la configuración: 
+Máquina: LX15PRO (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 25116
+PSVersion: 5.1.26100.9278
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9278
+BuildVersion: 10.0.26100.9278
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es .\tareas\tarea01\tarea01.txt
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> #punto 1 ubicacion y navegacion. Abrí una terminal, corré pwd, después cd / y volvé a tu home con cd.
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> pwc
+pwc : El término 'pwc' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. 
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e 
+inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ pwc
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (pwc:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+pwc : El término 'pwc' no se reconoce como nombre de un
+cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó
+una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ pwc
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (pwc:String) [],
+    CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> pwd
+
+Path
+----
+C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-cur...
+
+
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> #muestra en que carpeta estoy actualmente.
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> cd
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> #hace lo mismo que pwd pero es comando general, tambin sirve para linux
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> cd \
+PS C:\> cd ~
+PS C:\Users\Evaristo> pwc
+pwc : El término 'pwc' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. 
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e 
+inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ pwc
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (pwc:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+pwc : El término 'pwc' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si escribió correctamente el
+nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ pwc
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (pwc:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Evaristo> pwd
+
+Path
+----
+C:\Users\Evaristo
+
+
+PS C:\Users\Evaristo> cd "C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026"
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> cd tareas
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas> cd ..
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> cd C:\Windows
+PS C:\Windows> cd ~
+PS C:\Users\Evaristo> cd "C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01"
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01> #ahora estoy en la carpeta tarea 01
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01> #voy a usar el comando mkdir para crear un para crear una carpeta y la voy a llamar practica
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01> mkdir practica
+
+
+    Directorio: C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          3/9/2026     19:52                practica
+
+
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01> #ya se creo la carpeta practica
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01> #ahora voy a entrar en la carpeta practica con cd 
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01> cd practica 
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora estoy dentro de la carpeta practica
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora voy a crear tres sub carpetas sub1, sub2 y sub3 
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #con el comando mkdir
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> mkdir sub1\sub2\sub3
+
+
+    Directorio: C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica\sub1\sub2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          3/9/2026     19:55                sub3
+
+
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora voy a crear un archivo de texto, donde le voy a poner dentro tarea 1
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> echo "tarea 1" > archivo.txt
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="tarea 1"
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ya cree el txt
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> dir
+
+
+    Directorio: C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l          3/9/2026     19:55                sub1
+-a---l          3/9/2026     19:58             20 archivo.txt
+
+
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #con esto veo que efectivamente quedo creado el txt y en que carpeta quedo
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora voy a copiar, mover y borrar
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #primero voy a copiar el archivo en otro que se va a llamar archivo2.txt
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> cp archivo.txt archivo2.txt
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ya cree la copia
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora voy a mover la copia a la carpeta sub1
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #para eso voy a usar el comando mv 
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> mv archivo2.txt sub1\archivo2.txt
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora el archivo2 esta en la carpeta sub1
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora voy a borrar el archivo original que esta en la carpeta practica
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #para eso voy a usar el comando rm
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> rm archivo.txt
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #listo archivo.txt ya se borro
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora voy a borra la carpeta sub3 que esta vacio. rmdir da error si la carpeta tiene contenido
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> rmdir sub3
+rmdir : No se encuentra la ruta de acceso 'C:\Users\Evaristo\OneDrive\Desktop\Ciencia de 
+Datos\repo-curso-2026\tareas\tarea01\practica\sub3' porque no existe.
+En línea: 1 Carácter: 1
++ rmdir sub3
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Evaris...1\practica\sub3:String) [Remove-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+rmdir : No se encuentra la ruta de acceso 'C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica\sub3' porque no
+existe.
+En línea: 1 Carácter: 1
++ rmdir sub3
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Evaris...1\practica\sub3:String) [Remove-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #el error es porque no le di la ruta complita desde practica, que es donde estoy parado ahora
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> rmdir sub1/sub2/sub3
+rmdir : No se puede quitar el elemento C:\Users\Evaristo\OneDrive\Desktop\Ciencia de 
+Datos\repo-curso-2026\tareas\tarea01\practica\sub1\sub2\sub3: No dispone de permisos suficientes para realizar esta 
+operación.
+En línea: 1 Carácter: 1
++ rmdir sub1/sub2/sub3
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\Users\Evaris...\sub1\sub2\sub3:DirectoryInfo) [Remove-Item], 
+IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemUnAuthorizedAccess,Microsoft.PowerShell.Commands.RemoveItemCommand
+rmdir : No se puede quitar el elemento C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica\sub1\sub2\sub3: No
+dispone de permisos suficientes para realizar esta operación.
+En línea: 1 Carácter: 1
++ rmdir sub1/sub2/sub3
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\Users\Evaris...\sub1\sub2\sub3:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemUnAuthorizedAccess,Microsoft.PowerShell.Commands.RemoveItemCommand
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> rmdir sub1\sub2\sub3
+rmdir : No se puede quitar el elemento C:\Users\Evaristo\OneDrive\Desktop\Ciencia de 
+Datos\repo-curso-2026\tareas\tarea01\practica\sub1\sub2\sub3: No dispone de permisos suficientes para realizar esta 
+operación.
+En línea: 1 Carácter: 1
++ rmdir sub1\sub2\sub3
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\Users\Evaris...\sub1\sub2\sub3:DirectoryInfo) [Remove-Item], 
+IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemUnAuthorizedAccess,Microsoft.PowerShell.Commands.RemoveItemCommand
+rmdir : No se puede quitar el elemento C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica\sub1\sub2\sub3: No
+dispone de permisos suficientes para realizar esta operación.
+En línea: 1 Carácter: 1
++ rmdir sub1\sub2\sub3
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\Users\Evaris...\sub1\sub2\sub3:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemUnAuthorizedAccess,Microsoft.PowerShell.Commands.RemoveItemCommand
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #el problema viene porque tengo la carpeta sincronizada con onedrive. Claude me propone probar con el siguiente comando 
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> Remove-Item -Path sub1\sub2\sub3 -Force
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #listo sub3 fue eliminada
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora voy a usar dir para que me muestre que hay dentro de la carpeta practica y -recuser para que me muestre tambien las sub carpetas dentro de practica
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> dir -recurse
+
+
+    Directorio: C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l          3/9/2026     20:11                sub1
+
+
+    Directorio: C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica\sub1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+dar--l          3/9/2026     20:18                sub2
+-a---l          3/9/2026     19:58             20 archivo2.txt
+
+
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #listo ahora puedo ver que en sub1 se encuentra archivo2.txt
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora voy a hacer un poco de plomeria 
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora voy a crear otro archivo de texto que le voy a poner dentro plomeria. Para eso uso el comando echo 
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> echo "plomeria" > lineas.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="plomeria"
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #sobre el mismo archivo voy a crear una linea nueva que se llamara linea2
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> echo "linea2" >> lineas.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="linea2"
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #listo ahora el archivo dice plomeria y abajo lineas 
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> echo "linea3" >>> lineas.txt
+En línea: 1 Carácter: 17
++ echo "linea3" >>> lineas.txt
++                 ~
+Falta la especificación de archivo después del operador de redirección.
+
+En línea: 1 Carácter: 17
++ echo "linea3" >>> lineas.txt
++                 ~~~~~~~~~~~~
+El flujo de salida de este comando ya está redirigido.
+En línea: 1 Carácter: 17
++ echo "linea3" >>> lineas.txt
++                 ~
+Falta la especificación de archivo después del operador de redirección.
+
+En línea: 1 Carácter: 17
++ echo "linea3" >>> lineas.txt
++                 ~~~~~~~~~~~~
+El flujo de salida de este comando ya está redirigido.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingFileSpecification
+
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> echo "linea3" >> lineas.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="linea3"
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora agregue linea3 debajo de linea2 
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora voy a leer el archivo y ver cuantas lineas tiene
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #voy a usar el comando get-content para ello
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> get-content lineas.txt | measure-object-line
+measure-object-line : El término 'measure-object-line' no se reconoce como nombre de un cmdlet, función, archivo de 
+script o programa ejecutable. Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe 
+que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 26
++ get-content lineas.txt | measure-object-line
++                          ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (measure-object-line:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+measure-object-line : El término 'measure-object-line' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 26
++ get-content lineas.txt | measure-object-line
++                          ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (measure-object-line:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> get-content lineas.txt | measure-object -line
+
+Lines Words Characters Property
+----- ----- ---------- --------
+    3
+
+
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #listo ahi conto que son tres reglones o lineas
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> #ahora voy a parar la grabacion. para ello tengo que volver a mi repo repo-curso-2026
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> cd "C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026"
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> #ahora que estoy en mi repo detengo la grabacion 
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260903203413
+**********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260903203530
+Nombre de usuario: LX15PRO\Evaristo
+Usuario RunAs: LX15PRO\Evaristo
+Nombre de la configuración: 
+Máquina: LX15PRO (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 25116
+PSVersion: 5.1.26100.9278
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9278
+BuildVersion: 10.0.26100.9278
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es .\tareas\tarea01\tarea01.txt
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> cd tareas\tarea01\practica
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> Get-Content lineas.txt | Sort-Object
+linea2
+linea3
+plomeria
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> Get-Content lineas.txt | Sort-Object -Unique
+linea2
+linea3
+plomeria
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026\tareas\tarea01\practica> cd "C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026"
+PS C:\Users\Evaristo\OneDrive\Desktop\Ciencia de Datos\repo-curso-2026> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260903203712
+**********************
