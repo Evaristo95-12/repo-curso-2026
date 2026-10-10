@@ -1,3 +1,8 @@
+#Grupo 2
+#Evaristo Bardullas 899200
+#Ivan Perez 910516
+#Pedro Coro el 917284
+
 #Cargar librerias:
   library(igraph)
 library(igraphdata)
